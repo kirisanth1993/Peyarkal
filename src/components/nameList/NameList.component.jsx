@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
 import { NAMELIST } from '../../app.constant.js';
-import { findNumber } from '../../util/findNumber.js';
+import { findNumericNumber } from '../../util/findNumericNumber.js';
 
 const NameList = ({currentLetter, gender}) => {
   return (
@@ -62,7 +62,7 @@ const NameList = ({currentLetter, gender}) => {
                 ஆங்கிலத்தில்: {nameObj.nameInEnglish}
               </Typography>
               <Typography variant="body2">
-                எண்: {findNumber(nameObj.nameInEnglish)}
+                எண்: {findNumericNumber(nameObj.nameInEnglish)}
               </Typography>
             </Grid>
 
