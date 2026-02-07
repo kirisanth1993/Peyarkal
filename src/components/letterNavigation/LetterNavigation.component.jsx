@@ -5,12 +5,15 @@ import { Grid, Button, Typography } from '@mui/material';
 const LetterNavigation = ({letterSelectAction}) => {
 
     const [currentLetter, setCurrentLetter] = React.useState('');
+    const [selectedLetterForStyle, setSelectedLetterForStyle] = React.useState('');
 
     return (
         <Grid
             sx={{
                 position: 'sticky',
                 top: 0,
+                px: 1,
+                pb: 2
             }}
         >
             <Grid
@@ -55,11 +58,13 @@ const LetterNavigation = ({letterSelectAction}) => {
                                 margin: '2px',
                                 color: '#ddff09',
                                 borderColor: '#fff', 
+                                backgroundColor: selectedLetterForStyle === letter ? '#512da8' : 'transparent'
                             }}
                             onClick={() => {
-                                setCurrentLetter('');
+                                setSelectedLetterForStyle(letter);
                                 letterSelectAction(letter);
                             }}
+                            
                         >
                             {letter}
                         </Button>
@@ -77,11 +82,13 @@ const LetterNavigation = ({letterSelectAction}) => {
                                 fontSize: '1.2rem',
                                 margin: '2px',
                                 color: '#ddff09',
-                                borderColor: '#fff', 
+                                borderColor: '#fff',
+                                backgroundColor: selectedLetterForStyle === letter ? '#512da8' : 'transparent'
                             }}
                             onClick={() => {
                                 setCurrentLetter('');
                                 letterSelectAction(letter);
+                                setSelectedLetterForStyle(letter);
                                 setTimeout(() => {
                                     setCurrentLetter(letter);
                                 }, 200);
@@ -106,8 +113,12 @@ const LetterNavigation = ({letterSelectAction}) => {
                                         margin: '2px',
                                         color: '#ddff09',
                                         borderColor: '#fff', 
+                                        backgroundColor: selectedLetterForStyle === singleLetterGroup ? '#512da8' : 'transparent'
                                     }}
-                                    onClick={() => letterSelectAction(singleLetterGroup)}
+                                    onClick={() => {
+                                        letterSelectAction(singleLetterGroup)
+                                        setSelectedLetterForStyle(singleLetterGroup);
+                                    }}
                                 >
                                     {singleLetterGroup}
                                 </Button>

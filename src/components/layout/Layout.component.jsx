@@ -1,10 +1,26 @@
 import { Grid, Box, Typography } from '@mui/material';
 import NameList from '../nameList/NameList.component.jsx';
 import LetterNavigation from '../letterNavigation/LetterNavigation.component.jsx';
-import React from 'react';
+import React, {useEffect} from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Layout = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [selectedLetter, setSelectedLetter] = React.useState('அ');
+  const [babyGender, setBabyGender] = React.useState('ஆண்');
+
+  useEffect(() => {
+    const preSelectedBabyGender = location.state?.gender;
+
+    if(!preSelectedBabyGender){
+      navigate('/gender');
+    } else{
+      setBabyGender(preSelectedBabyGender);
+      // Clear state after setting
+      navigate(location.pathname, { replace: true, state: {} });
+    }
+  },[]);
 
   return (
     <Grid container sx={{ width: '100vw', height: 'auto', margin: 0 }}>
@@ -36,7 +52,7 @@ const Layout = () => {
         >
           <NameList
             currentLetter={selectedLetter}
-            gender={"ஆண்"}
+            gender={babyGender}
           />
         </Box>
       </Grid>

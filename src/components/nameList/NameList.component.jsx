@@ -22,7 +22,7 @@ const NameList = ({currentLetter, gender}) => {
             color: '#fff',
           }}
         >
-          பெயர்கள்
+          {gender} குழந்தையின் பெயர்கள்
         </Typography>
       </Grid>
       <Grid
@@ -33,7 +33,7 @@ const NameList = ({currentLetter, gender}) => {
         pt={1}
         pb={2}
       > 
-        {NAMELIST[gender][currentLetter]
+        {NAMELIST?.[gender]?.[currentLetter]
         ?.slice() // create a copy to avoid mutating original
         .sort((a, b) => a.name.localeCompare(b.name, 'ta'))
         ?.map((nameObj, index) => (
