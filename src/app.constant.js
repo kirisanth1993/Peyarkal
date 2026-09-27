@@ -1,47 +1,48 @@
 export const NAMELIST = {
-    ஆண்: {
+    male: {
         அ: [
+            { name: 'அருண்', meaning: 'தீபம் போன்றவன்', nameInEnglish: 'Arun' },
             { name: 'அருண்', meaning: 'தீபம் போன்றவன்', nameInEnglish: 'Arun' },
         ],
         ஆ: [
-            { name: 'ஆரோன்', meaning: 'மழை', nameInEnglish: 'arun' },
-            { name: 'ஆனந்த்', meaning: 'மகிழ்ச்சி', nameInEnglish: 'arun' },
-            { name: 'ஆராத்யா', meaning: 'பூஜிக்கப்பட்டவர்', nameInEnglish: 'arun' },
+            { name: 'ஆரோன்', meaning: 'மழை', nameInEnglish: 'Aaroon' },
+            { name: 'ஆனந்த்', meaning: 'மகிழ்ச்சி', nameInEnglish: 'Anand' },
+            { name: 'ஆராத்யா', meaning: 'பூஜிக்கப்பட்டவர்', nameInEnglish: 'Aaradhya' },
         ],
         இ: [
-            { name: 'இராஜ்', meaning: 'இரவு', nameInEnglish: 'arun' },
-            { name: 'இஷா', meaning: 'இனிய குரல்', nameInEnglish: 'arun' },
-            { name: 'இருதயா', meaning: 'இருதயத்தின் உரிமை', nameInEnglish: 'arun' },
+            { name: 'இராஜ்', meaning: 'இரவு', nameInEnglish: 'Raj' },
+            { name: 'இஷா', meaning: 'இனிய குரல்', nameInEnglish: 'Isha' },
+            { name: 'இருதயா', meaning: 'இருதயத்தின் உரிமை', nameInEnglish: 'Irudhayaa' },
         ],
         ஈ: [
-            { name: 'ஈஷா', meaning: 'பிரகாசம்', nameInEnglish: 'arun' },
-            { name: 'ஈரா', meaning: 'மழை', nameInEnglish: 'arun' },
-            { name: 'ஈராதி', meaning: 'பிரகாசம்', nameInEnglish: 'arun' },
+            { name: 'ஈஷா', meaning: 'பிரகாசம்', nameInEnglish: 'Eesha' },
+            { name: 'ஈரா', meaning: 'மழை', nameInEnglish: 'Eera' },
+            { name: 'ஈராதி', meaning: 'பிரகாசம்', nameInEnglish: 'Eeraadhi' },
         ],
         உ: [
-            { name: 'உதயா', meaning: 'காலை', nameInEnglish: 'arun' },
-            { name: 'உமா', meaning: 'பார்வதி', nameInEnglish: 'arun' },
-            { name: 'உதவா', meaning: 'உதவி', nameInEnglish: 'arun' },
+            { name: 'உதயா', meaning: 'காலை', nameInEnglish: 'Udhayaa' },
+            { name: 'உமா', meaning: 'பார்வதி', nameInEnglish: 'Uma' },
+            { name: 'உதவா', meaning: 'உதவி', nameInEnglish: 'Udhavaa' },
         ],
         ஊ: [
-            { name: 'ஊர்மிளா', meaning: 'காற்றின் இசை', nameInEnglish: 'arun' },
-            { name: 'ஊர்வசி', meaning: 'காற்றின் தேவதை', nameInEnglish: 'arun' },
-            { name: 'ஊர்வதி', meaning: 'காற்றின் தேவதை', nameInEnglish: 'arun' },
+            { name: 'ஊர்மிளா', meaning: 'காற்றின் இசை', nameInEnglish: 'Oormila' },
+            { name: 'ஊர்வசி', meaning: 'காற்றின் தேவதை', nameInEnglish: 'Oorvashi' },
+            { name: 'ஊர்வதி', meaning: 'காற்றின் தேவதை', nameInEnglish: 'Oorvathi' },
         ],
         எ: [
-            { name: 'எழில்', meaning: 'எழுத்து', nameInEnglish: 'arun' },
-            { name: 'எழுத்தாளர்', meaning: 'எழுத்தாளர்', nameInEnglish: 'arun' },
-            { name: 'எழுத்து', meaning: 'எழுத்து', nameInEnglish: 'arun' },
+            { name: 'எழில்', meaning: 'எழுத்து', nameInEnglish: 'Ezhil' },
+            { name: 'எழுத்தாளர்', meaning: 'எழுத்தாளர்', nameInEnglish: 'Ezhuthalar' },
+            { name: 'எழுத்து', meaning: 'எழுத்து', nameInEnglish: 'Ezhuthu' },
         ],
         ஏ: [
-            { name: 'ஏகா', meaning: 'ஒற்றுமை', nameInEnglish: 'arun' },
-            { name: 'ஏகாந்தா', meaning: 'ஒற்றுமை', nameInEnglish: 'arun' },
-            { name: 'ஏகாதிபத்திய', meaning: 'ஒற்றுமை', nameInEnglish: 'arun' },
+            { name: 'ஏகா', meaning: 'ஒற்றுமை', nameInEnglish: 'Aka' },
+            { name: 'ஏகாந்தா', meaning: 'ஒற்றுமை', nameInEnglish: 'Akantha' },
+            { name: 'ஏகாதிபத்திய', meaning: 'ஒற்றுமை', nameInEnglish: 'Akaadhipathiya' },
         ],
         ஐ: [
-            { name: 'ஐயா', meaning: 'அன்பு', nameInEnglish: 'arun' },
-            { name: 'ஐயராஜா', meaning: 'அன்பு', nameInEnglish: 'arun' },
-            { name: 'ஐயராஜா', meaning: 'அன்பு', nameInEnglish: 'arun' },
+            { name: 'ஐயா', meaning: 'அன்பு', nameInEnglish: 'Aiya' },
+            { name: 'ஐயராஜா', meaning: 'அன்பு', nameInEnglish: 'Aiyaraja' },
+            { name: 'ஐயராஜா', meaning: 'அன்பு', nameInEnglish: 'Aiyaraja' },
         ],
         ஒ: [
             { name: 'ஒளி', meaning: 'ஒளி', nameInEnglish: 'arun' },
@@ -59,7 +60,7 @@ export const NAMELIST = {
             { name: 'ஔவையார்', meaning: 'ஔவையார்', nameInEnglish: 'arun' },
         ]
    , nameInEnglish: 'arun' },
-    பெண்: {
+    female: {
         அ: [
         { name: 'அருணி', meaning: 'தீபம் போன்றவள்', nameInEnglish: 'arun' },
         { name: 'அனிதா', meaning: 'அன்பான பெண்', nameInEnglish: 'arun' },

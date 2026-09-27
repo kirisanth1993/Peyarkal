@@ -8,7 +8,7 @@ const Layout = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [selectedLetter, setSelectedLetter] = React.useState('அ');
-  const [babyGender, setBabyGender] = React.useState('ஆண்');
+  const [babyGender, setBabyGender] = React.useState('male');
 
   useEffect(() => {
     const preSelectedBabyGender = location.state?.gender;

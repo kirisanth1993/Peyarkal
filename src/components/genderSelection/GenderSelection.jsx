@@ -32,9 +32,9 @@ const GenderSelection = () => {
             <Grid container spacing={4} justifyContent="center" mt={2} mb={4}>
                 <Grid item>
                     <ButtonBase
-                        onClick={() => handleGenderSelect('ஆண்')}
+                        onClick={() => handleGenderSelect('male')}
                         sx={{
-                            border: selectedGender === 'ஆண்' ? '3px solid #fff500' : '3px solid transparent',
+                            border: selectedGender === 'male' ? '3px solid #fff500' : '3px solid transparent',
                             borderRadius: 4,
                             overflow: 'hidden',
                             width: 180,
@@ -47,7 +47,7 @@ const GenderSelection = () => {
                     >
                         <img
                             src="/assets/images/male.png"
-                            alt="ஆண்"
+                            alt="Male"
                             style={{ width: 120, height: 120, marginBottom: 8 }}
                         />
                         <Typography variant="h6" color="#fff">ஆண்</Typography>
@@ -55,9 +55,9 @@ const GenderSelection = () => {
                 </Grid>
                 <Grid item>
                     <ButtonBase
-                        onClick={() => handleGenderSelect('பெண்')}
+                        onClick={() => handleGenderSelect('female')}
                         sx={{
-                            border: selectedGender === 'பெண்' ? '3px solid #fff500' : '3px solid transparent',
+                            border: selectedGender === 'female' ? '3px solid #fff500' : '3px solid transparent',
                             borderRadius: 4,
                             overflow: 'hidden',
                             width: 180,
@@ -70,7 +70,7 @@ const GenderSelection = () => {
                     >
                         <img
                             src="/assets/images/female.png"
-                            alt="பெண்"
+                            alt="Female"
                             style={{ width: 120, height: 120, marginBottom: 8 }}
                         />
                         <Typography variant="h6" color="#fff">பெண்</Typography>
